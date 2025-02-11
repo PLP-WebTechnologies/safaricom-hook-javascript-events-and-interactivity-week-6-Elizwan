@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Interactive Button -->
+    <button id="colorToggleButton">Toggle Background Color</button>
+
+    <!-- Slider with Real-Time Feedback -->
+    <input type="range" id="textSizeSlider" min="10" max="50" value="16" />
+    <p id="dynamicText">Adjust my size!</p>
+
+    <!-- Modal with Event Listeners -->
+    <button id="openModalButton">Open Modal</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalButton" class="close">&times;</span>
+        <p>This is a modal!</p>
+      </div>
+    </div>
+
+    <!-- Form with Validation -->
+    <form id="myForm">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error" id="nameError"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error" id="emailError"></span>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <span class="error" id="passwordError"></span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Dropdown with Custom Message -->
+    <select id="dropdownMenu">
+      <option value="">Select an option</option>
+      <option value="option1">Dance Amapiano</option>
+      <option value="option2">Sing "Tutaonana tena"</option>
+      <option value="option3">Walk 5 kms</option>
+    </select>
+    <p id="dropdownMessage"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
